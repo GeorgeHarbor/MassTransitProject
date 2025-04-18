@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3Vb1rBu4zF4=",
+  "success": true,
+  "projectFilePath": "/home/luka/projekti/MassTransitProject/FormulaOne/FormulaOne.Entities/FormulaOne.Entities.csproj",
+  "expectedPackageFiles": [
+    "/home/luka/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.14/microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
