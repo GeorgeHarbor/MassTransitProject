@@ -1,3 +1,4 @@
+using FormulaOne.Api.Endpoints;
 using FormulaOne.DataService;
 using FormulaOne.DataService.Data;
 using Microsoft.EntityFrameworkCore;
@@ -16,6 +17,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
@@ -27,6 +29,8 @@ if (app.Environment.IsDevelopment())
   app.UseSwaggerUI();
 }
 
+app.MapDriverEndpoints();
+app.MapAchievementsEndPoints();
 app.UseHttpsRedirection();
 
 // var summaries = new[]
